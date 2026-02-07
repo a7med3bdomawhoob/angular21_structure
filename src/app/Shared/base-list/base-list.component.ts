@@ -1,5 +1,5 @@
 import { Directive, inject, OnDestroy, OnInit } from '@angular/core';
-import { BaseCrudService } from '../shared-services';
+import { BaseCrudService } from '../BaseCrudService.services';
 import { filter, of, Subject, switchMap, takeUntil } from 'rxjs';
 import { PaginationInfo } from '../pagination-info';
 import { PaginationParams } from '../pagination-params';

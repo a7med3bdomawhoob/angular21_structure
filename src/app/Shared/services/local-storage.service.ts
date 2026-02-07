@@ -10,7 +10,7 @@ export class LocalStorageService {
      get(key: LOCALSTORAGE_ENUM): string | null {
     if (typeof window !== 'undefined') {   
       const value= localStorage.getItem(key);
-       return value ? JSON.parse(value) : null; 
+       return value 
     }
     return null; // SSR fallback
   }

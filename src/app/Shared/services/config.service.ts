@@ -12,6 +12,7 @@ export class ConfigService {
   private http = inject(HttpClient);
 
   load(): Observable<ConfigType> {
+    debugger
     return this.http
       .get<ConfigType>('resources/environment.json')
       .pipe(tap((res) => (this.CONFIG = { ...this.CONFIG, ...res })))
